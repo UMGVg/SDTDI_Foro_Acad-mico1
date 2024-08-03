@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% Configuración de pagina
+\geometry{ 
+    letterpaper,
+    left=2.4cm,
+    right=2.4cm,
+    top=2.4cm,
+    bottom=2.4cm
+} % Configuración de tamaño de pagina y márgenes
+\setstretch{0}  % Renglón cerrado
+\setlength{\parindent}{0pt} % Configuración para eliminar la sangría
+
+% Configuración personalizadas
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\uppercase{#1}} \\[1em]
+  \end{center} 
+} %  para título
+\newcommand{\myauthor}[4]{
+  \begin{center}
+    \textit{#1} \\[1em] % Nombre
+    \textit{#2} \\[1em] % Carnet y universidad
+    \textit{#3} \\[1em] % Clase
+    \href{mailto:#4}{\textit{#4}} % Correo electronico
+  \end{center}
+} %  para autor
+
+\begin{document}
+
+\mytitle{Buenas prácticas para el desarrollo de aplicaciones ágiles}
+\myauthor{V. E. Gonzalez Ortiz}{7690-13-11075 Universidad Mariano Gálvez}{Seminario de Tecnologías de la Investigación}{vgonzalezo@miumg.edu.gt}
+
+\section{Resumen}
+En el desarrolo de software, hay multiple metodologias, siendo una de ellas la metodologia ágil, esta es una metodología que se centra en ser una entrega rápida y continua con el fin de tener productos funcionales en cortos periodos, o en las etaps iniciales, tambien se enfoca en la colaboración constante con los dueños o expertos del proceso. Este articulo busca explorar las buenas prácticas esenciales para el desarrollo de aplicaciones ágiles, tomando en considerancion  aspectos clave como la gestión de los equipo involucrados, la comunicación efectiva entre los diferences equipoc como con la parte del negocio, la mejora continua. Por ultimo se resalta la importancia de adoptar un enfoque ágil para mejorar la eficiencia y la calidad en el desarrollo de software.
+
+\section{Palabras clave}
+Aplicaciones, Cliente, Agil, Gestion, desarrollo, mejora continua, autogestion.
+
+\section{Desarrollo del tema}
+
+\subsection{Metodologias Agil}
+El desarrollo ágil de software ha ganado popularidad por su capacidad de adaptarse rápidamente a los cambios y entregar productos funcionales de manera continual, logrando tener mejor retroalimentacion del cliente final, y asi mismo poder detectar mejoras y arreglos desde las fases tempranas. Metodologías como Scrum, Kanban y Extreme Programming (XP) son ejemplos de las metodologias de enfoques ágiles mas empleadas que han impactado la industria del software.
+Una de las mas utilizadas es Scrum, a tal modo que dentro de los equipos puede haber un \textbf{Scrum master} quien es el encargado, de la mano con el gerente o encargado de proyecto, de liderar al equipo y encaminarlo en las buenas practicas que dictan las metodologias.
+
+\subsection{Aplicaciones Agil}
+Por la misma popularidad de las metodologias agiles en el entorno de desarrollo, hay hoy en dia diversas y variadas aplicaciones agiles, estas son herramientas o plataformas diseñadas para aplicar de manera mas efectiva las metodologias agiles, proveendo ayuda para planificar, controlar y gestionar el trabajo de diversos equipos implicados en el dessarrollo del software mejorando la colaboracion entre los mismos, entre las aplicaciones mas populares se pueden mensionar: JIRA, Trello, Monday.com y Azure DevOps.
+
+\subsection{Buenas practicas}
+Adicional a las aplicaciones agiles, se tienen tambien buenas practicas que se pueden emplear en conjunto para poder aprovechar de mejor manera las diferentes normas, recomendacions y guias que nos brindan las metodologias agiles.
+
+\subsection*{Seleccion de una correcta metodologia}
+La primera buena practica, seria la eleccion de la correcta metodologia agil, que se aplique de mejor manera a los equipos ya formados, las tareas y procesos por realizar, cabe mensionar que de los equipos que utilizan metodologias agiles, suelen tener ya establecida cual utilizar, dado que suele requerir un cambio cultural, por lo cual no se suele tener mas de una metodologia.
+
+\subsection*{Gestión del Equipo}
+Dentro del proceso de desarrollo, las personas pueden estar divididas en equipos, pero con las normas de la metodologia agil empliada, facilita el poder tener equipos multidisplinados, que son equipos donde cada equipo tendra su propia habilidad especifica o especializada, donde las fases o tareas se podran asignar en funcion a las habilidades.
+Aca se puede mensionar asi mismo la autogestion, que es poder fomentar la autoorganizacion donde los equipos deciden como realizar el trabajo en lugar de ser dirigidos en cada paso por un gerente, dado que estan enfocados en una meta conjunta.
+
+\subsection*{Comunicación Efectiva con el cliente}
+Uno de los principales puntos y beneficios de la metodologias agiles es la comunicacion efectiva, por lo que la involucracion del cliente desde las fases tempranas del desarrollo es clave entre las buenas practicas, involucrandolo desde estas faces se puede recopilar mejor informacion de los requerimientos iniciales, asi como tener retroalimentacion constante de los diversos entregables individuales de cada fase.
+Entre los principales puntos se pueden mencionar, \textbf{Daily¨} que son llamadas diarias de no mas de 15 minutos para poder discutir el progreso individual y colectivo asi como la resolucion conjunta de problemas.
+Asi como la \textbf{retroalimentacion continua} la cual aporta informacion valiosa para un buen desarrollo y cumplimiento de requisitos o requerimientos asi como su correcta funcionalidad.
+
+\subsection*{Integración Continua}
+La integracion continua se refiere a la constante mejora he implementacion como la \textbf{automatizacion de pruebas} que aydua a poder agilizar las pruebas y su vez poder corroborar diferentes escenarios para asegurar que el codigo sea probado contantemente y se pueda tener mejor detection de errores de forma temprana
+Se tiene a su vez el despliege continuo, que involucra que las nuevas caracteristicas puedan ser liberadas con menor riesgo y de forma mas efectivo.
+
+\subsection*{Pruebas constantes}
+Al poder tener entregas oportunas y constante retroalimentacion de las partes involucradas, es importante la constante realizacion de pruebasd para poder asegurar la implementacion de los comentarios con la finalidad de que puedan de igual manera ser validadas y poder concluir los puntos.
+
+\subsection*{Mejora Continua}
+Considerando la comunicacion efectiva y la integracion continua, uno de los resultados es la mejora continua, que se refiere a poder discutir en las diferentes etapas, los resultados buenos y los malos para poder detectar mejoras en futuras versiones sobre temas que no afectan el funcionamiento actual.
+
+\subsection*{priorizacion de tareas}
+al inicio de cada proyecto, se definen todas las tareas que seran entregadas y las fechas de cumplimiento de las mismas, con esto se asegura que puedan ser divididas en entregables segun la necesidad y la conveniencia, asi como poder priorizar que tareas pueden tener mayor impacto y poder ser completadas con antelacion para poder recibir retroalimentacion efectiva y poder tener mejora continua sobre las mismas.
+
+\subsection*{Historias de usuario}
+entre las ventajas de utilizar herramientas agiles, es poder implementar la practica de historias de usuario, estas son pequeñas tareas que todo el equipo puede ver, para tener mejor visibilidad del panorama general asi como el avance individual que se tiene, para evitar bloqueos entre tareas relacionadas, asi como tener mayor claridad de lo que cada uno esta realizando de forma individual y evitar retrabajo o incompatbilidad.
+
+\subsection*{Menor deuda tecnica}
+Una deuda tecnica, son los errores detectados pero no corregidos, que no afectan el funcionamiento normal del software, pero que su acumulacion implicara en una futura refactorizacion necesaria o mayor trabajo en la etapa de implementacion o monitore, entre las buenas practicas de una metodologia agil se tiene la reduccion de dicha deuda tecnica, enfocandose en la continua retroalimentacion y en la correccion temprana de posibles errores, se reduce los errores a largo plazo que son los causantes de la deuda tecnica.
+
+\subsection*{Reutilizacion de codigo}
+Mayormente incluido en el principio DRY (no lo repitas tu mismo) establece una reutilizacion de codigo, esto implica que, entre las tareas se establece el poder dividir las tareas de forma que el mismo codigo no sea realizado por mas de una persona, asi como la oportuna alocacion de codigo de tal manera que sea accesible segun sea necesitado. 
+
+\section{Observaciones y comentarios}
+\begin{enumerate}
+    \item La implementación de prácticas ágiles puede variar según la metodologia utilizada y del contexto y  cultura del equipo, sin embargo las normas previamente establecidas son normas que suelen estar siempre presentes. 
+    \item Se considera que los equipos que adoptan un enfoque ágil desde el inicio tienden a adaptarse mejor y a entregar productos de mayor calidad. Sin embargo, la transición a prácticas ágiles puede ser desafiante para organizaciones con una cultura de gestión tradicional. Es crucial que la alta dirección apoye y entienda el valor del enfoque ágil para que la implementación sea exitosa.
+    \item Gran parte de las buenas practicas suelen estar presentes entre el desarrollo normal de software, sin embargo suelen ser aplicadas de manera separada, en cuando con el enfoque agil presenta correlacion entre las practicas y aplicacion conjunta.
+\end{enumerate}
+
+\section{Conclusiones}
+\begin{enumerate}
+    \item El desarrollo ágil de aplicaciones permite una entrega continua de alto valor y una mejor adaptación a los cambios.
+    \item La implementacion de buenas prácticas son fundamentales para el éxito de proyectos ágiles.
+    \item Las organizaciones que adoptan las metodologias agililes deben estar preparadas para una cultura de colaboración y aprendizaje constante.
+\end{enumerate}
+
+\section{Bibliografia}
+\begin{itemize}
+\item[*] Atlassian. (s.f.). Herramientas ágiles de gestión de proyectos. \url{https://www.atlassian.com/es/agile/project-management/tools}
+\item[*] MuyComputerPro. (2022, 28 de junio). Las cinco mejores prácticas ágiles para el desarrollo de software. 
+\url{https://www.muycomputerpro.com/2022/06/28/cinco-mejores-practicas-agile-desarrollo-software}
+\item[*] Manifesto for Agile Software Development. (s.f.). Principios ágiles detrás del Manifiesto Ágil. 
+\url{https://agilemanifesto.org/iso/es/principles.html}
+\item[*] Innevo. (s.f.). Mejores prácticas en el desarrollo de software. Recuperado de \url{https://blog.innevo.com/mejores-practicas-desarrollo-software}
+\end{itemize}
+
+
+\url{https://github.com/UMGVg/SDTDI_Foro_Acad-mico1}
+\end{document}
+
