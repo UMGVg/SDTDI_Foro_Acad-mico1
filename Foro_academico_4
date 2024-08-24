@@ -1,0 +1,150 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% Configuración de pagina
+\geometry{ 
+    letterpaper,
+    left=2.4cm,
+    right=2.4cm,
+    top=2.4cm,
+    bottom=2.4cm
+} % Configuración de tamaño de pagina y márgenes
+\setstretch{0}  % Renglón cerrado
+\setlength{\parindent}{0pt} % Configuración para eliminar la sangría
+
+% Configuración personalizadas
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\uppercase{#1}} \\[1em]
+  \end{center} 
+} %  para título
+\newcommand{\myauthor}[4]{
+  \begin{center}
+    \textit{#1} \\[1em] % Nombre
+    \textit{#2} \\[1em] % Carnet y universidad
+    \textit{#3} \\[1em] % Clase
+    \href{mailto:#4}{\textit{#4}} % Correo electronico
+  \end{center}
+} %  para autor
+
+\begin{document}
+
+\mytitle{Orquestación de servidores, Kurbenetes, Microservicios, OAuth2.0 e implementación de servicios en la nube (12-factor application)}
+\myauthor{V. E. Gonzalez Ortiz}{7690-13-11075 Universidad Mariano Gálvez}{Seminario de Tecnologías de la Investigación}{vgonzalezo@miumg.edu.gt}
+
+\section{Resumen}
+La implementacion de aplicaciones a gran escala han impulsado el uso de arquitecturas flexibles y escalables, se explora las tecnologias mas utilizadas en estas arquitecturas asi como los metodos de autenticacion utilizados para la gestion de las aplicaciones y servicios asi como la gestion y despliege.
+
+\section{Palabras clave}
+\textbf{Orquestacion, gestion, Servicios en la nube, contenedores.}
+
+\section{Desarrollo del tema}
+Considerando la implementación y ampliación de la tecnología en gran parte de la vida diaria, como en el trabajo, la educación, la salud, las comunicaciones, entre otras muchas áreas, se deben tener en cuenta las amenazas que esto conlleva, como la integridad de la información que se consulta, la confidencialidad de la información personal o privada, y la accesibilidad o disponibilidad a la información crítica. A raíz de estas amenazas, ahora se tiene un enfoque en poder proteger los datos que la tecnología procesa.
+
+\subsection{Temas relacionados}
+Se detallan a continuacion una serie de subtemas relacionados que apoyan al mejor entendimiento de la informacion de los temas principales, mencionando a su vez la relacion que tienen con los mismos.
+
+\subsection*{Orquestacion}
+La orquestacion es la coordinacion de forma automatizada de multiples tareas, procesos y servicios.
+
+\subsection*{Aplication Programing Interface (API) - Interfaz de Programacion de Aplicaciones}
+Son mecanismos que permiten a dos componentes o servicios de software comunicarse entre ellos por medio de protocolos predefinidos.
+
+\subsection*{Software as a Service (SaaS) - Software como servicio}
+En este escenario se entrega un software completamente funcional, teniendo la administracion completa al programador, en este aspecto el usuario adquiere el uso de una aplicacion bajo demanda librandose del mantenimiento.
+
+\subsection*{Contenedores}
+Un contenedor es una unidad estándar de software que empaqueta el código y todas sus dependencias para que la aplicación se ejecute de manera confiable en diferentes entornos.
+
+\subsection{Orquestación de Servidores}
+La orquestación de servidores es el proceso automatizado de gestión y coordinación de múltiples servidores. Esta tecnología permite la automatización de tareas como la provisión de recursos, la administración de configuraciones y la implementación de aplicaciones. Las herramientas de orquestación son fundamentales en la administración moderna de infraestructuras IT (tecnologia de informacion) para mantener la coherencia y reducir el error humano en entornos complejos de servidores.
+
+\subsection*{Su funcionalidad}
+Funciona mayormente para simplicar y agilizar las operaciones en el ambiente de TI perminitendo organizar y gestionar las infraestructuras de manera eficiente.
+
+\subsection*{Como funciona}
+Se basa mayormente en el uso de herramientas y plataformas que permiten gestionar y ejecutar flujos automatizados, se realiza por medio de un controlador centralizado que tiene la capacidad de coordinar y ejecutar dichos flujos.
+
+\subsection{Kurbenetes}
+Kubernetes es una plataforma portable de codigo abierto para la automatizacion, emplementacion y administracion de contenedores, basado en google could y liberado por Google en el año 2014, utilizada por la popularidad del uso de contenedores en las organizaciones, 
+
+\subsection*{Su funcionalidad}
+Se dibide en tres principales funcionalidades o caracteristicas, \textbf{Como plataforma de contenedores}, permite desplegar, escalar y administrar contenedores en un clúster de servidores físicos o virtuales \textbf{Plataforma de microservicios}, \textbf{plataforma portable de nube}
+
+\subsection{Microservicios}
+La arquitectura de microservicios es un enfoque para desarrollar aplicaciones como una serie de servicios pequeños e independientes, cada uno enfocado en una funcionalidad específica y se comunica entre ellos a travez de APIs definidas. Esta arquitectura favorece la escalabilidad, la flexibilidad y la rapidez en el desarrollo, permitiendo a los equipos trabajar en diferentes partes de una misma aplicación sin interferir entre sí. Sin embargo, la gestión de microservicios a gran escala requiere una orquestación eficiente.
+
+\subsection*{Caracteristicas}
+\textbf{Autonomia:} Cada servicio se puede desarrollar, implementar y operar sin afectar el funcionamiento de otros servicios, asi como la implementacion de tecnologias independientes.
+\textbf{Especializados:} Cada servicio esta enfocado en resolver un problema en especifico.
+\textbf{Reutilizable:} Al estar bien definida la funcion de cada servicio, se pueden crear unciones determinadas que pueden ser llamadas y utilizado en diferentes partes de la aplicacion.
+
+\subsection{OAuth2.0}
+Autorizacion Abierta, es un protocolo de autorización estándar que permite acceso limitado a las aplicaciones a los recursos de otras aplicaciones en nombre de los usuarios sin exponer sus credenciales. la version 1.0 fue sustituida en el año 2012. Es ampliamente utilizado en la implementación de microservicios y aplicaciones en la nube, permitiendo un control granular sobre los permisos de acceso. Es un protocolo de autorizacion y no de autenticacion, esto quiere decir que es utilizada para conceder acceso a un conjunto de recursos.
+
+\subsection*{Como funciona}
+Se solicitua autorizacion al servidor de autorizacion proporcionando el ID la clave secreta de cliente como identificacion y los ambitos a utilizar en el URI de redireccionamiento, posterior el servidor de autorizacion autentica al cliente y se verifica los ambitos solicitados estan permitidos, una autenticado el servidor redirige de vuelta al cliente con un codigo de autorizacion, con el token de acceso, se tiene el uso de los recursos solicitados.
+
+\subsection{implementación de servicios en la nube (12-factor application)}
+La metodología 12-Factor Application es un conjunto de principios para desarrollar aplicaciones modernas que sean escalables, portátiles y fáciles de mantener en entornos en la nube. Este enfoque promueve la separación de configuraciones, la gestión de dependencias, y la ejecución de aplicaciones en contenedores, alineándose a la arquitectura de microservicios.
+Esta metodologia es un marco enfocado en aplicaciones de software como servicio (SaaS) 
+Los doce factores equivalen a un principio y practicas que se deben de cumplir en las aplicaciones modernas que implementa esta metodologia.
+\begin{enumerate}
+    \item \textbf{Base de Código Única: } utilizar un sistema de control de versiones que permita multiples despliegues como desarrollo produccion y pruebas.
+    \item \textbf{Dependencias: } declarar y aislar las dependencias de aplicaciones en archivos nomblados explisitamente.
+    \item \textbf{Configuración: } Almacenar todas las variables de configuracion del entorno en un archivo de configuraciones envez de tenerlas en el codigo.
+    \item \textbf{Servicios de Apoyo: } Todo servicio externo como bases de datos y almacenamiento, y servicios externos puedan ser cambiados, actualizados sin necesidad de que el codigo de la aplicacion sea afectado
+    \item \textbf{Construcción, Liberación, Ejecución: } Las etapas deben estar separadas hasta su despliegue
+    \item \textbf{Procesos: } la aplicacion funciona como un proceso mas, devolviendo un estado y almacenando un respaldo
+    \item \textbf{Enlace de Puertos: } se debe de manejar las solicitudes de HTTP para los servicios WEB a travez de un puerto establecido.
+    \item \textbf{Concurrencia: } Ser escalable clonando procesos en vez de utilizar hilos dentro de los procesos.
+    \item \textbf{Disponibilidad: } Se debe de asegurar la solidez de la aplicacion y validacion de tiempos de ejecucion adecuados.
+    \item \textbf{Paridad entre Desarrollo y Producción: } Los entornos deben tener similitud para evitar inconsistencias entre desplieges.
+    \item \textbf{Registros: } Deben  de ser registrados y gestionados ppppor separados para la gestion de un analicis.
+    \item \textbf{Procesos de Administración: } Se debe de garantizar la consistencia de las tareas administrativas asi como del entorno. 
+\end{enumerate}
+
+\section{Observaciones y comentarios}
+\begin{enumerate}
+    \item Estas tecnologías, cuando se implementan de manera conjunta, ofrecen una infraestructura altamente automatizada y escalable que responde a las demandas de las aplicaciones modernas.
+    \item La complejidad de gestión y la necesidad de habilidades especializadas son desafíos que deben ser abordados cuando se implementa estas metodologias y tecnologias.
+\end{enumerate}
+
+\section{Conclusiones}
+\begin{enumerate}
+    \item La adopción de Kubernetes, microservicios, y la metodología 12-Factor Application proporciona una base sólida para la construcción de aplicaciones escalables y resilientes en la nube.
+    \item OAuth2.0 complementa esta infraestructura al ofrecer un mecanismo seguro y eficiente de autenticación y autorización. Aunque estas tecnologías presentan desafíos, su correcta implementación ofrece beneficios significativos en términos de flexibilidad, escalabilidad y seguridad.
+\end{enumerate}
+
+\section{Bibliografia}
+\begin{itemize}
+\item[*] Kaspersky. (n.d.). What is cyber security? Kaspersky Latam..  \url{https://latam.kaspersky.com/resource-center/definitions/what-is-cyber-security}
+\item[*] Orquestación en servidores - Huawei Enterprise Support Community. 
+\url{https://forum.huawei.com/enterprise/es/orquestaci%C3%B3n-en-servidores/thread/671615996298936320-667212884846981120}
+\item[*] ¿Qué es la orquestación? - Red Hat.  
+\url{https://www.redhat.com/es/topics/automation/what-is-orchestration}
+\item[*] ¿Qué es Kubernetes? - Kubernetes.io.  
+\url{https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/}
+\item[*] ¿Qué es Kubernetes? - Google Cloud.   
+\url{https://cloud.google.com/learn/what-is-kubernetes?hl=es-419}
+\item[*] Microservicios - AWS. 
+\url{https://aws.amazon.com/es/microservices/}
+\item[*] ¿Qué es OAuth 2.0? - Auth0. 
+\url{https://auth0.com/es/intro-to-iam/what-is-oauth-2}
+\item[*] 12 Factor App: Aplicaciones Exitosas SaaS - Aplyca. 
+\url{https://www.aplyca.com/blog/12-factor-app-aplicaciones-exitosas-saas}
+\end{itemize}
+
+
+\url{https://github.com/UMGVg/SDTDI_Foro_Acad-mico1}
+\end{document}
+
