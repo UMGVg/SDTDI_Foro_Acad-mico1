@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% Configuración de pagina
+\geometry{ 
+    letterpaper,
+    left=2.4cm,
+    right=2.4cm,
+    top=2.4cm,
+    bottom=2.4cm
+} % Configuración de tamaño de pagina y márgenes
+\setstretch{0}  % Renglón cerrado
+\setlength{\parindent}{0pt} % Configuración para eliminar la sangría
+
+% Configuración personalizadas
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\uppercase{#1}} \\[1em]
+  \end{center} 
+} %  para título
+\newcommand{\myauthor}[4]{
+  \begin{center}
+    \textit{#1} \\[1em] % Nombre
+    \textit{#2} \\[1em] % Carnet y universidad
+    \textit{#3} \\[1em] % Clase
+    \href{mailto:#4}{\textit{#4}} % Correo electronico
+  \end{center}
+} %  para autor
+
+\begin{document}
+
+\mytitle{impulsadores del cambio digital}
+\myauthor{V. E. Gonzalez Ortiz}{7690-13-11075 Universidad Mariano Gálvez}{Seminario de Tecnologías de la Investigación}{vgonzalezo@miumg.edu.gt}
+
+\section{Resumen}
+El cambio digital es una de las transformaciones fundamentales tanto en la vida diaria como en las organizaciones, permitiendo la adpcion de tecnologias emergentes para mejorar la eficiencia, productividad y conpetitividad de la misma.
+
+\section{Palabras clave}
+\textbf{Transformacion, globalizacion, digital, innovacion.}
+
+\section{Desarrollo del tema}
+
+\subsection{Temas relacionados}
+Se detallan a continuacion una serie de subtemas relacionados que apoyan al mejor entendimiento de la informacion del tema principal, mencionando a su vez la relacion que tienen con los mismos.
+
+\subsection*{Globalizacion}
+La digitalización permite que personas y empresas en diferentes partes del mundo se conecten e interactúen en tiempo real. Las plataformas digitales eliminan barreras geográficas, facilitando el comercio, la colaboración y el intercambio de información a nivel global.
+
+\subsection*{Medio ambiente}
+La digitalización ha permitido una gestión más eficiente de los recursos naturales como la reduccion del uso de papel asi como la creación de sistemas más eficientes en términos de consumo energético, tanto en hogares como en industrias
+
+\subsection*{Desigualdad Digital} 
+La globalización del cambio digital también ha revelado desigualdades en el acceso a la tecnología y la conectividad. Mientras que algunas regiones prosperan gracias a la digitalización, otras enfrentan desafíos para acceder a infraestructuras digitales adecuadas
+
+\subsection{Inpulsadores digitales para organizaciones}
+
+\subsection*{Innovacion}
+Dia a dia se crean y mejoran nuevas tecnologias, estas tecnologias nos permiten a las orgnizaciones optimizar procesos, reducir costos, y mejorar la calidad de los productos y servicios prestados, asi como una mejor toma de decisiones, asi como un trato personalizado y especializado.
+Considerando lo acelerado que se encuentra la innovacion tecnologica, hoy en dia las organizaciones y empresas deben de poder adaptarse a las nuevas tecnologias.
+
+\subsection*{Demanda del consumidor}
+Con la mejora de los productos y servicions con ayuda de la innovacion tecnologica, los consumidores son cada ves mas exigentes en tener atencion y experiencias personalizadas y en corto tiempo, desde el inicio del comercio electrico asi como la implementacion de servicios digitales, asi mismo las organizaciones necesitan poder estar conectados constantementes con los clientes, facilitando multiples canales digitales.
+
+\subsection*{Competitividad}
+Las organizaciones deben adaptarse al cambio digital para mantenerse competitivas en un mercado globalizado. La digitalización permite a las empresas optimizar sus operaciones y responder con mayor agilidad a las demandas del mercado. Las empresas que adoptan la transformación digital a menudo pueden reducir costos, aumentar la eficiencia y lanzar nuevos productos y servicios más rápidamente, 
+
+\subsection*{Globalizacion}
+ globalización ha facilitado el acceso a nuevos mercados, pero también ha intensificado la competencia. Las empresas necesitan implementar soluciones digitales para gestionar operaciones internacionales, coordinar cadenas de suministro globales y mantener la comunicación en tiempo real con sus socios comerciales.
+
+\subsection{Inpulsadores digitales para la vida diaria}
+
+\subsection*{Acceso a la información}
+El acceso a la información ha cambiado gracias a la accebilidad de los dispositivos móviles y del internet. Teniendo ahora teléfono inteligente, cualquier persona puede buscar y acceder a la información. 
+
+\subsection*{Servicios en la nube}
+La digitalización de datos personales, fotos, documentos y archivos en la nube permite a las personas almacenar y acceder a su información desde cualquier lugar. Plataformas como Google Drive, Dropbox o iCloud han facilitado el acceso rápido a contenido digital, mejorando la productividad personal y el acceso a recursos en cualquier momento y lugar.
+
+\subsection*{Automatización del hogar}
+Con dispositivos como los asistentes virtuales (Amazon Alexa, Google Assistant), termostatos inteligentes, cámaras de seguridad conectadas y electrodomésticos que se controlan a través de aplicaciones. Esto permite un control más eficiente del entorno doméstico, optimizando el uso de recursos y mejorando la comodidad diaria.
+
+\subsection*{Entretenimiento digital}
+El cambio digital ha revolucionado cómo consumimos el entretenimiento teniendo ahora el alcance de diferentes plataformas de video como Netflix, YouTube, de musica como Spotify y de videojuegos como Stream han cambiado el acceso a contenido audiovisual, musical y de juegos, permitiendo el consumo bajo demanda. También ha influido en la creación de contenido personalizado y accesible desde múltiples dispositivos.
+
+\subsection*{Educación y aprendizaje en línea}
+El acceso a la educación ha cambiado gracias a las plataformas de aprendizaje en línea. Ahora es posible aprender habilidades y obtener certificaciones sin salir de casa, lo que facilita el acceso a la educación para todas las edades. Este impulso también permite la autoformación continua.
+
+\subsection*{ Salud digital y bienestar}
+Otro impulsador de la tecnologia ha sido el poder permitir a las personas el poder gestionar de forma digital su salud de manera más efectiva. Aplicaciones que rastrean la actividad física, la dieta y los hábitos de sueño, junto con dispositivos portátiles como reloges inteligentes, han facilitado el monitoreo personal del bienestar. Además, los servicios de telemedicina permiten a los usuarios acceder a profesionales de la salud sin necesidad de desplazarse.
+
+\subsection*{Pagos digitales y banca electrónica}
+Los pagos digitales han simplificado las transacciones diaria. Desde pagar servicios con un teléfono móvil hasta realizar compras en las plataformas de pago digital, junto con la banca en línea, hacen que las transacciones sean más rápidas y seguras. Esto ha transformado la manera en que gestionamos nuestras finanzas.
+
+\subsection*{Redes sociales y conectividad}
+Las redes sociales han cambiado la forma en que las personas interactúan y se conectan. han transformado las relaciones personales y el acceso a la información, fomentando la creación de comunidades virtuales globales y el intercambio instantáneo de experiencias.
+
+\section{Observaciones y comentarios}
+\begin{enumerate}
+    \item El cambio digital no es simplemente una cuestión tecnológica, sino un proceso integral que afecta la cultura organizacional, la estructura y las habilidades del personal.
+    \item de los mayores desafíos es la resistencia al cambio, que a menudo proviene de la falta de comprensión de los beneficios que la digitalización puede aportar.
+    \item las organizaciones deben priorizar la capacitación y el desarrollo de competencias digitales en su fuerza laboral. 
+    
+\end{enumerate}
+
+\section{Conclusiones}
+\begin{enumerate}
+    \item Los impulsores del cambio digital en la vida diaria han mejorado la calidad de vida al ofrecer mayor conveniencia, eficiencia y acceso a recursos.
+    \item El cambio digital es inevitable para las organizaciones que desean seguir siendo competitivas en la economía global actual.
+    \item El éxito de esta transformación depende no solo de la adopción de nuevas tecnologías, sino también de la capacidad de las organizaciones para gestionar el cambio cultural y mejorar las habilidades de sus empleados.
+\end{enumerate}
+
+\section{Bibliografía}
+\begin{itemize}
+    \item[*] AméricaEconomía. (n.d.). Impulsores de la transformación digital. AméricaEconomía. \url{https://www.americaeconomia.com/impulsores-de-la-transformacion-digital}
+    \item[*] Lisit. (n.d.). Tipos de software impulsor de la transformación digital. Lisit. \url{https://lisit.cl/novedades/tipos-de-software-impulsores-de-la-transformacion-digital/}
+    \item[*] Vicente, O. (n.d.). Transformación digital: Impulsor de la innovación y el crecimiento empresarial. LinkedIn. \url{https://es.linkedin.com/pulse/transformaci%C3%B3n-digital-impulsor-de-la-innovaci%C3%B3n-y-el-oswaldo-vicent%C3%A9}
+\end{itemize}
+
+\url{https://github.com/UMGVg/SDTDI_Foro_Acad-mico1}
+\end{document}
+
