@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% Configuración de pagina
+\geometry{ 
+    letterpaper,
+    left=2.4cm,
+    right=2.4cm,
+    top=2.4cm,
+    bottom=2.4cm
+} % Configuración de tamaño de pagina y márgenes
+\setstretch{0}  % Renglón cerrado
+\setlength{\parindent}{0pt} % Configuración para eliminar la sangría
+
+% Configuración personalizadas
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\uppercase{#1}} \\[1em]
+  \end{center} 
+} %  para título
+\newcommand{\myauthor}[4]{
+  \begin{center}
+    \textit{#1} \\[1em] % Nombre
+    \textit{#2} \\[1em] % Carnet y universidad
+    \textit{#3} \\[1em] % Clase
+    \href{mailto:#4}{\textit{#4}} % Correo electronico
+  \end{center}
+} %  para autor
+
+\begin{document}
+
+\mytitle{SALUD DIGITAL Y ERGONOMÍA DIGITAL}
+\myauthor{V. E. Gonzalez Ortiz}{7690-13-11075 Universidad Mariano Gálvez}{Seminario de Tecnologías de la Investigación}{vgonzalezo@miumg.edu.gt}
+
+\section{Resumen}
+Este trabajo tiene como objetivo analizar la relación entre la salud digital y la ergonomía digital, abordando su impacto en el bienestar físico y mental en la era tecnológica. Mencionando las herramientas y dispositivos inteligentes que facilitan el monitoreo de la salud, permitiendo avances en la telemedicina y el acceso a datos médicos en tiempo real. Se prestó especial atención a los riesgos derivados del uso prolongado de la tecnología sin las debidas consideraciones ergonómicas.
+
+Se destaca cómo la aplicación de tecnologías especializadas han permitido una mayor disponibilidad y precisión en la recolección y análisis de datos médicos, optimizando el trabajo de los profesionales de la salud. Además, se presentan recomendaciones ergonómicas para prevenir problemas asociados con el uso intensivo de dispositivos digitales, tales como descansos regulares y un entorno de trabajo adecuado.
+
+\section{Palabras clave}
+\textbf{Digial, Ergonomia, Datos medicos, Dispositivos inteligentes}
+
+\section{Desarrollo del tema}
+
+\subsection{Temas relacionados}
+Se detallan a continuacion una serie de subtemas relacionados que apoyan al mejor entendimiento de la informacion de los temas principales, mencionando a su vez la relacion que tienen con los mismos.
+
+\subsection*{IoMt}
+Del concepto Internet de las cosas -IoT- nace El Internet de las Cosas Médicas -IoMT-, la cual describe todo dispositivo enfocado o capacitado para poder proveer, analizar he interpretar informacion del estado medico de las personas.
+
+\subsection*{Inteligencia Artificial y BigData}
+Considerando que entre mas informacion se proveea de uno o varios dispositivos enfocados en generar registros medicos, a lo que es considerado como Bigdata, se vuelve un reto el poder analizarlos en un tiempo oportuno, aqui es donde la inteligencia artificial tiene mayor relevancia, teniendo algoritmos que puedan interpretarlos en muy corto periodo de tiempo altos volumenes de informacion, si como poder proveer modelos de gran ayuda para las personas que se dedican al servicio de la area medica.
+
+\subsection*{Ciberseguridad}
+La ciberseguridad se refiere a la práctica de proteger sistemas, redes, y programas de ataques digitales malintencionados. Estos ataques suelen estar dirigidos a acceder, modificar o destruir información sensible, suplantar la identidad de los usuarios para acceder a servicios de una organización.
+
+\subsection*{UI y UX}
+Interaz de Usuario -UI- y Experiencia de Usuario -UX- son dos conceptos clave en el diseño de productos digitales, especialmente en aplicaciones, sitios web y software. por lo que están relacionados con el concepto de ergonomia digital.
+
+\subsection*{mHealth}
+Definido por la Organizacion Mundial de la Salud -OMS- con el uso de cualquier dispositivo moil para la practica medica y sanitaria.
+
+\subsection{Salud Digital}
+La salud digital, tambien llamada eSalud, se refiere a la aplicación de tecnologías digitales para poder mejorar la salud de las personas, aplicandola en diagnósticos, tratamientos y en prevención de enfermedades, así como todo el sector sanitario enfocado en promover el bienestar físico y mental. 
+El concepto de eSaludo ha tenido un amplico crecimiento en los ultimos años dado que hoy en dia los dispositivos inteligentes se encuentran de una forma mas accesible, se puede tener el acceso a un amplio nivel de registros digitales de la vida cotidiana y profesional.
+Este concepto abarca 
+
+\subsection*{Riesgos}
+Cabe mencionar que existen riesgos relacionados con la salud digital que se deben de tomar en consideracion entre estos se pueden mencionar los siguientes:
+\begin{enumerate}
+    \item \textbf{Seguridad y privacidad de datos:} Dado el alto volumen de datos y registros que se generan cada dia por los diferentes dispositivos y que estos pueden contener datos sensibles, habre la posibilidad de un incorrecto manejo que puede exponer la privacidad de las personas.
+    \item \textbf{Errores:} Si bien la inteligencia artificial y los sistemas automatizados pueden mejorar la precisión del diagnóstico, existe el riesgo de que se produzcan errores debido a fallos en los algoritmos o datos inexactos, lo que puede tener consecuencias en atención médica o diagnosticos.
+    \item \textbf{Dependencia:} El uso excesivo puede generar dependencia de las personas a depender de unicamente la informacion que estos dispositivos puedan generar, de la misma manera del lado de los profesionales, depender unicamente de la informacion proveeida para poder brindar un diagnostico clinico adecuado.
+\end{enumerate}
+
+\subsection*{Aplicaciones y usos}
+\begin{enumerate}
+    \item \textbf{Telemedicina:} El avance en las telecomunicaciones hacen hoy posible el poder tener consultas medicas a distancia, logrando asi la atencion a personas con dificultades de movilizarse o comunidades con atencion limitada.
+    \item \textbf{Disponibilidad:} La digitalizacion de la informacion hace posible tener un facil acceso a la informacion logrando asi centralizarla y poder compartirla con el personal y tener acceso oportuno al mismo.
+    \item \textbf{Aplicaciones especializadas:} Considerando que una gran parte de la poblacion actual cuenta con un dispositivo mobil inteligente, las aplicaciones con uso dentro del sector salud han tenido buen recepcion considerando que pueden tener un mejor monitoreo de su condicion medica.
+\end{enumerate}
+
+\subsection*{Dispositivos}
+\begin{enumerate}
+    \item \textbf{Smartphones:} Telefonos inteligentes donde se pueden utilizar aplicaciones especializadas asi como poder ver registros y datos proveeidos por otros dispositivos.
+    \item \textbf{Wearables:} Dispositivos portatiles con diversos sensores inteligentes como gafas, pulseras e incluso ropa que recolectan datos de la condicion fisica.
+    \item \textbf{Smartwatch:} Relojes inteligentes, que pueden medir diversas funciones vitales de gran ayuda para un monitoreo constante de la salud.
+    \item \textbf{Basculas inteligentes:} Basculas medidoras de peso que pueden proporcionar informacion adicional, con ayuda de diversos sensores, pueden calcular informacion adicional como el inice de masa corporal -IMC- asi como la vinculacion con los smartphones para proporcionar graficas.
+    \item \textbf{Sensores de sueño:} Pulseras con sensores medidores de sueño que pueden proveer datos de la calidad del sueño asi como el tiempo continuo para un mejor analicis.
+    \item \textbf{Monitores inteligentes:} Dispositios especializados en poder medir diferentes niveles tales como la glucosa, presion arterial, calor corporal.
+\end{enumerate}
+
+\subsection{Ergonomia digital}
+La ergonomía digital se refiere a la manera en que las personas utilizan he interactúan con cualquier herramienta digital, como computadoras, televisores, dispositivos móviles y gatgets inteligentes asi cómo el diseño de interfaces gráficas con la finalidad de mejorar la interaccion de las personas a un extenso uso de los sistemas informáticos.
+
+El concepto de accesibilidad es importante ya que busca garantizar que cualquier persona, independientemente de sus limitaciones físicas o cognitivas, pueda acceder y utilizar correctamente las plataformas digitales. Este enfoque no solo mejora la experiencia del usuario, sino que fomenta la inclusión social, asegurando que todos tengan las mismas oportunidades de interacción.
+
+Otro aspecto clave de la ergonomía digital es la experiencia de usuario (UX), que se refiere a la percepción y satisfacción que los usuarios obtienen al interactuar con un medio digital como lo puede ser un sitio web o una aplicación. Un diseño centrado en el usuario debe facilitar la navegación, garantizar contenido accesible, y emplear interfaces intuitivas que optimicen la interacción. Al integrar tecnologías avanzadas como la inteligencia artificial y el aprendizaje automático, se puede mejorar significativamente la satisfacción y eficacia de la experiencia digital.
+
+Por tanto, la ergonomía digital no solo abarca la accesibilidad técnica, sino también la experiencia subjetiva de los usuarios, asegurando que la interacción con las plataformas digitales sea no solo eficiente, sino también agradable y accesible para todos, sin sacrificar la calidad ni la funcionalidad.
+
+\subsection{Ergonomia digital en el teletrabajo}
+Enfocandonos en el teletrabajo, es importante mencionar la ergonomia fisica al estar expuesto a largos periodos de interaccion con los dispositivos que utilizamos para acceder a los medios digitales, se pueden mencionar las siguientes consideraciones.
+\begin{enumerate}
+    \item \textbf{Ambiente:} Es importante el tener el adecuado espacio de trabajo, si se planea tener ampleas jornadas en el mismo, este ambiente incluye el tener una silla y escritorio adecuado y ajustable para una correcta postura, el monitor segun el uso que se le dara y perifericos enfocados en reducir la factiga tales como teclados, mouses y audifonos.
+    \item \textbf{Descansos ergonomicos:} Las diferentes organizaciones promueven los descansos ergonomicos, considerando que es facil el no tener una nocion de cuanto tiempo se esta inmerso en el trabajo, se establecen tiempos donde se debe de tener pequeños estiramientos para poder liberar tension de piernas, cuello y brazos, asi como considerar la llamada "Regla 20-20-20" que es tener la vista durante 20 segundos enfocada en algo a mas de 20 metros por cada 20 minutos consecutios que se tengan empleados en un monitor para el correcto descanso visual .
+    \item \textbf{Iluminacion:} En caso de que se tenga jornadas de trabajo nocturnas o en ambientes cerrados, es importante el tener la correcta iluminacion para poder evitar el forzar la vista al trabajar enfrente de una pantalla.
+\end{enumerate}
+
+
+\section{Observaciones y comentarios}
+\begin{enumerate}
+    \item  El uso de la tecnología en la vida moderna es inevitable
+    \item La prevención de los efectos negativos es crucial para mantener la salud digital.
+    \item Existen múltiples riesgos asociados con el uso excesivo o incorrecto de las tecnologías, tanto a nivel físico como psicológico.
+    \item La ergonomía digital, por su parte, sigue siendo un tema que no recibe la atención adecuada en muchos entornos laborales. Las empresas y los individuos deben ser conscientes de los riesgos asociados y tomar medidas proactivas para mejorar sus prácticas diarias.
+   
+\end{enumerate}
+
+\section{Conclusiones}
+\begin{enumerate}
+    \item La salud digital y la ergonomía digital son esenciales para el bienestar físico y mental en la era tecnológica..
+    \item Existen múltiples riesgos asociados con el uso excesivo o incorrecto de las tecnologías, tanto a nivel físico como psicológico.
+    \item  Implementar soluciones simples como descansos regulares y ajustes ergonómicos puede prevenir problemas de salud.
+\end{enumerate}
+
+\section{Bibliografia}
+\begin{itemize}
+    \item[*] Sanofi. (n.d.). Salud Digital: Beneficios para paciente y profesional. Sanofi Campus. \url{https://pro.campus.sanofi/es/actualidad/articulos/salud-digital-beneficios-para-paciente-y-profesional}
+    \item[*] Iberdrola. (n.d.). ¿Qué es la eSalud? Innovación - Iberdrola. \url{https://www.iberdrola.com/innovacion/que-es-esalud}
+    \item[*] Revista Salud Digital. (n.d.). ¿De qué hablamos cuando hablamos de salud digital? Revista Salud Digital. \url{https://www.revistasaluddigital.com/es/noticia/de-que-hablamos-cuando-hablamos-de-salud-digital}
+    \item[*] SPRI. (n.d.). Ergonomía digital: Humanizando internet. SPRI. \url{https://www.spri.eus/es/teics-comunicacion/ergonomia-digital-humanizando-internet/#:~:text=%C2%BFQu%C3%A9%20es%20la%20Ergonom%C3%ADa%20Digital}
+    \item[*] Blog Posgrado U. Continental. (n.d.). Ergonomía en la era digital y el teletrabajo. U. Continental Blog. \url{https://blogposgrado.ucontinental.edu.pe/ergonomia-era-digital-teletrabajo}
+\end{itemize}
+
+\url{https://github.com/UMGVg/SDTDI_Foro_Acad-mico1}
+\end{document}
+
