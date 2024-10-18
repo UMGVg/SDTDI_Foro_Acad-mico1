@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% Configuración de pagina
+\geometry{ 
+    letterpaper,
+    left=2.4cm,
+    right=2.4cm,
+    top=2.4cm,
+    bottom=2.4cm
+} % Configuración de tamaño de pagina y márgenes
+\setstretch{0}  % Renglón cerrado
+\setlength{\parindent}{0pt} % Configuración para eliminar la sangría
+
+% Configuración personalizadas
+\newcommand{\mytitle}[1]{
+  \begin{center}
+    \textbf{\uppercase{#1}} \\[1em]
+  \end{center} 
+} %  para título
+\newcommand{\myauthor}[4]{
+  \begin{center}
+    \textit{#1} \\[1em] % Nombre
+    \textit{#2} \\[1em] % Carnet y universidad
+    \textit{#3} \\[1em] % Clase
+    \href{mailto:#4}{\textit{#4}} % Correo electronico
+  \end{center}
+} %  para autor
+
+\begin{document}
+
+\mytitle{calidad y confiabilidad del software}
+\myauthor{V. E. Gonzalez Ortiz}{7690-13-11075 Universidad Mariano Gálvez}{Seminario de Tecnologías de la Investigación}{vgonzalezo@miumg.edu.gt}
+
+\section{Resumen}
+La calidad y confiabilidad del software son dos factores críticos en el desarrollo de sistemas eficientes y seguros. Este informe aborda los principios fundamentales de ambos conceptos, destacando la importancia de seguir metodologías estandarizadas para garantizar que el software no solo cumpla con las expectativas del cliente, sino que también sea confiable en términos de rendimiento y seguridad. Se revisan enfoques como el desarrollo basado en pruebas (TDD), las auditorías de calidad, y los métodos de verificación y validación, así como las herramientas comunes para asegurar que los productos de software se mantengan dentro de estándares aceptables. Las conclusiones resaltan la necesidad de integrar calidad y confiabilidad desde las primeras etapas del desarrollo.
+
+\section{Palabras clave}
+\textbf{Calidad del software, confiabilidad, verificación y validación, desarrollo basado en pruebas, auditorías de software}
+
+\section{Desarrollo del tema}
+\subsection{Temas relacionados}
+Se detallan a continuacion una serie de subtemas relacionados que apoyan al mejor entendimiento de la informacion de los temas principales, mencionando a su vez la relacion que tienen con los mismos.
+
+\subsection*{Mantenibilidad del software}
+La mantenibilidad está relacionada tanto con la calidad como con la confiabilidad, ya que un software fácil de mantener es menos propenso a sufrir fallos a largo plazo y permite la incorporación de nuevas funcionalidades sin comprometer su estabilidad. La mantenibilidad implica una arquitectura de código clara, documentación adecuada y el uso de buenas prácticas de codificación. Un software con alta calidad es generalmente más fácil de mantener, lo que mejora su confiabilidad al reducir la probabilidad de introducir errores en futuras modificaciones.
+
+\subsection*{Seguridad del software}
+La seguridad del software también está íntimamente ligada a la calidad y confiabilidad. Un sistema seguro no solo debe proteger los datos y las operaciones de los usuarios, sino que también debe ser confiable para garantizar que no existan vulnerabilidades explotables que afecten su correcto funcionamiento. Las pruebas de seguridad, como las pruebas de penetración y la revisión del código para detectar vulnerabilidades, son prácticas esenciales para asegurar la confiabilidad del software en entornos críticos.
+
+\subsection*{Escalabilidad del software}
+La escalabilidad se refiere a la capacidad del software para manejar un aumento en la carga o en la demanda de recursos sin degradar su rendimiento o confiabilidad. Un software escalable debe mantener su nivel de calidad y confiabilidad incluso bajo condiciones de estrés, lo cual requiere una planificación cuidadosa del diseño del sistema y de la infraestructura de soporte. Las pruebas de rendimiento y la optimización de recursos son fundamentales para garantizar que el software sea escalable y confiable a largo plazo.
+
+\subsection*{Pruebas automatizadas}
+Las pruebas automatizadas son fundamentales para garantizar tanto la calidad como la confiabilidad del software. Estas pruebas se ejecutan repetidamente para verificar que los cambios no introduzcan fallos en el código existente. Además de TDD, las pruebas de regresión automatizadas aseguran que la funcionalidad previamente validada no se vea afectada por nuevas actualizaciones. La automatización de pruebas permite una cobertura más extensa y frecuente, mejorando tanto la calidad como la confiabilidad del software.
+
+\subsection{Calidad del software}
+La calidad del software se refiere al conjunto de características que permiten a un sistema o componente cumplir con los requisitos establecidos por los usuarios y stakeholders. Estas características incluyen funcionalidad, usabilidad, mantenibilidad, eficiencia, y portabilidad. El concepto de calidad no se limita al correcto funcionamiento del software, sino que abarca todos los atributos que influyen en la satisfacción del usuario final y la capacidad de adaptación del software a diferentes entornos.
+
+\subsection*{Verificación y validación}
+Para asegurar la calidad del software, las organizaciones suelen aplicar procesos de verificación y validación (VV). La verificación se enfoca en garantizar que el software se haya desarrollado correctamente de acuerdo a los estándares y especificaciones. Esto incluye la revisión de código, pruebas unitarias y análisis estático de software. En cambio, la validación se concentra en confirmar que el software cumpla con las expectativas y necesidades del cliente, a través de pruebas de aceptación y validaciones funcionales.
+
+\subsection*{Pruebas de calidad del software}
+La calidad también se promueve mediante metodologías de desarrollo como el Desarrollo Basado en Pruebas (TDD). Esta práctica implica la escritura de pruebas automatizadas antes de la implementación de la funcionalidad, lo que facilita la detección temprana de defectos y promueve un diseño más robusto desde las primeras etapas del ciclo de vida del software.
+
+\begin{enumerate}
+    \item \textbf{Pruebas unitarias:} Evaluación de componentes individuales del software para verificar su correcto funcionamiento.
+    \item \textbf{Pruebas de integración:} Asegura que los módulos del software interactúan correctamente entre sí.
+    \item \textbf{Pruebas de sistema:} Evaluación del sistema completo para asegurar que todos los componentes funcionan correctamente en conjunto.
+    \item \textbf{Pruebas de regresión:} Se realizan para asegurar que las nuevas actualizaciones no afecten funcionalidades previamente validadas.
+\end{enumerate}
+
+\subsection*{Auditorías de calidad}
+Las auditorías de calidad son revisiones formales del proceso de desarrollo y del producto de software para garantizar el cumplimiento con los estándares de calidad. Estas auditorías pueden incluir la revisión de procesos, código fuente, y documentación técnica para asegurar que el equipo sigue buenas prácticas y metodologías de desarrollo como el CMMI o las ISO de calidad del software.
+
+\subsection{Confiabilidad del software}
+La confiabilidad del software es la capacidad del sistema para funcionar sin fallos en condiciones específicas durante un período determinado. Es particularmente crítica en aplicaciones de misión crítica, como sistemas médicos o aeronáuticos, donde los fallos pueden resultar en consecuencias graves. La confiabilidad se mide a menudo a través de métricas como el tiempo medio entre fallos (MTBF) y el tiempo medio para la recuperación (MTTR).
+
+\subsection*{Tolerancia a fallos}
+Para mejorar la confiabilidad del software, se emplean diversas técnicas de ingeniería como la redundancia, la detección y manejo de excepciones, y el diseño de arquitecturas tolerantes a fallos. Los análisis de confiabilidad también involucran la evaluación de la robustez del software ante condiciones adversas, como sobrecarga o entrada de datos inesperada.
+
+\subsection*{Pruebas de confiabilidad}
+El uso de herramientas de análisis estático de código, también contribuye significativamente a mejorar la confiabilidad. Estas herramientas permiten identificar vulnerabilidades y errores potenciales antes de que el software sea ejecutado, lo que facilita la corrección temprana de problemas que podrían causar fallos en producción.
+
+\begin{enumerate}
+    \item \textbf{Pruebas de carga y estrés:} 
+    Evalúan el comportamiento del sistema bajo condiciones extremas de uso, como grandes volúmenes de datos o múltiples usuarios simultáneos.
+    \item \textbf{Pruebas de recuperación:} Evalúan la capacidad del sistema para recuperarse de fallos y volver a un estado de operación normal en el menor tiempo posible.
+\end{enumerate}
+
+
+\section{Observaciones y comentarios}
+\begin{enumerate}
+    \item  El desarrollo de software de calidad requiere un enfoque multifacético que incluye no solo buenas prácticas de codificación, sino también un fuerte compromiso con la mejora continua de la confiabilidad.
+    \item Las metodologías como TDD, las auditorías de calidad y el análisis de código, tanto estático como dinámico, son fundamentales para asegurar que los productos de software cumplan con los más altos estándares de calidad y confiabilidad.
+    \item Los temas relacionados, como la mantenibilidad y la seguridad, deben ser considerados desde el inicio del desarrollo para garantizar un sistema robusto y eficiente.   
+\end{enumerate}
+
+\section{Conclusiones}
+\begin{enumerate}
+    \item La calidad del software es un concepto amplio que incluye diversos atributos como funcionalidad, eficiencia y usabilidad.
+    \item La confiabilidad es esencial en sistemas críticos y debe abordarse mediante prácticas de diseño y pruebas robustas.
+    \item  Herramientas como el análisis estático y las pruebas automatizadas son clave para asegurar la calidad y confiabilidad del software.
+    \item  Los temas relacionados, como la seguridad y la escalabilidad, influyen directamente en la calidad y confiabilidad a largo plazo.
+    \item  La integración de buenas prácticas desde las primeras etapas del desarrollo mejora significativamente los resultados del producto final.
+\end{enumerate}
+
+\section{Bibliografia}
+\begin{itemize}
+    \item[*] SG Software Guru. (n.d.). Ingeniería de la Confiabilidad en el Software. SG Revista. \url{https://sg.com.mx/revista/12/ingenieria-la-confiabilidad-software}
+    \item[*] ITTG Web. (2016). 4.3 Confiabilidad en el Software. ITTG Web. \url{https://ittgweb.wordpress.com/2016/05/29/4-3-confiabilidad-en-el-software/}
+    \item[*] Rossainz, R. (n.d.). Confiabilidad y Seguridad en el Software. BUAP. \url{https://www.cs.buap.mx/~rossainz/IngSwII_Cruzada/3_Diapositivas/10_Unidad4_Confiabilidad_Seguridad.pdf}
+    \item[*] Rocelec. (n.d.). Calidad y Confiabilidad en el Software. Rocelec. \url{https://www.rocelec.mx/noticias/calidad-y-confiabilidad}
+    \item[*] Quind. (n.d.). El Rol de la Confiabilidad del Software en tus Proyectos. Quind Blog. \url{https://quind.io/blog/el-rol-de-la-confiabilidad-del-software-en-tus-proyectos/#:~:text=La%20confiabilidad%20en%20el%20software,consistente%2C%20predecible%20y%20sin%20fallos.}
+\end{itemize}
+
+\url{https://github.com/UMGVg/SDTDI_Foro_Acad-mico1}
+\end{document}
+
